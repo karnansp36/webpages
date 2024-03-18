@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton%7CBaskervville%7CRaleway&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
+    <title>About page</title>
+    <style>
+        
+#navbar ul li{
+    list-style-type: none;
+   color: white;
+   font-size: 23px;
+   font-weight: 60px; 
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   width: 33.25%;
+    height:100%;  
+}
+#navbar ul li:hover{
+    
+    background-color: rgb(42, 72, 120);
+}
+#navbar ul li a{
+    text-decoration: none;
+    color: white;
+}
+#nav-bar{
+    width: 100%;
+    height: 70px;
+    background-color: #be3144;
+    display: flex;
+    justify-content:flex-end ;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+}
+#nav-bar ul{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-inline-start: 0%;
+    width: 100%;
+    margin-block: 0;
+    height: 100%;
+}
+#navbar{
+    width: 100%;
+    max-width:50%;
+    height: 100%; 
+}
+
+
+*{
+    margin: 0%;
+}
+.about{
+    width: auto;
+    height:100vh;
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.about h1{
+    color: white;
+    font-size: 65px;
+    font-style: Helvetica, sans-serif;
+}
+.about p{
+    color:#be3144;
+    font-size: 35px;
+    font-style: italic;
+}
+#project{
+    background-color: #405075;
+}
+.project-tile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 40px;  
+}
+.project-tile h1{
+    font-size: 40px;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.project-tile hr{
+    width:650px;
+    margin-top: 5px;
+}
+.projects{
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.work{
+ width: 410px;
+ height: 380px;
+ border: 3px solid black;
+ background-color: rgb(59, 68, 80);
+ margin: 20px;
+ max-width: 80%;
+ transition: 0.5s;
+
+}
+.work img{
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+.work h2{
+   color:white;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height:15%;
+}
+
+
+  .button-1{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    width:100%;
+    height: 250px;
+  }
+  .button-1 button{
+    height: 50px;
+    width: 140px;
+    font-size: 20px;
+  }
+  .button-1 button:hover{
+    background-color:#c4c4c4;
+    transform: scale(1.1);
+  }
+  
+#project a{
+    text-decoration: none;
+  }
+#contact div{
+    width:auto;
+    height: auto;
+    
+  }
+.work:hover{
+    transform: scale(1.1);
+    z-index:5;
+}
+.connect{
+    width: auto;
+    height:100vh;
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#contact{
+    width: auto;
+    height:100vh;
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.connect h1{
+    font-size: 60px;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.connect p{
+    font-size: 20px;
+    color:rgb(228, 224, 224);
+    padding: 10px;
+}
+.social-icons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.social-icons a{
+    text-decoration: none;
+    color: white;
+    
+    padding: 20px;
+    font-size: 30px;
+    
+}
+.footer{
+    margin-top: 300px;
+    margin-bottom:50px;
+}
+.footer hr{
+    width:100vw;
+    background-color: red;
+    border:0;
+    height: 3px;
+}
+.footer h3{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.f{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding:30px;
+    
+}
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
+    </style>
+</head>
+<body>
+    <!--Beginning of the Nav-bar-->
+       <!--     Navigation bar with logo name and nav links -->
+       <div id="fixed">
+        <div id="container1">
+            <div class="contain">
+                        <div class="item1">
+                            <img src="https://cdn-icons-png.flaticon.com/128/1538/1538659.png" alt="arc icon" style="width:20px; height: 20px;">
+                            <div class="item2 txt">Smart Tech</div>
+                        </div>
+                        
+                        <div class="item3 navelements">
+                            <nav class="navbar" >
+                                <ul class="navlink">
+                                    <li><a href="Index.html" ><span>Home</span></a></li>
+                                    <li><a href="Entertainment.html"><span>Entertainment</span></a></li>
+                                    <li><a href="about.html"><span>About</span></a></li>
+                                    <li><a href="loginPage.html"><span>Login</span></a></li>
+                                </ul>
+                            </nav>
+                        </div>         
+            </div>
+        </div>
+    </div>
+    <!--End of the Nav-bar-->
+
+    <!--Beginning of the Welcome-section-->
+    <main>
+        <section id="welcome-section">
+            <div class="about">
+                <h1>Hey I am Karnan</h1>
+                <p>a web developer</p>
+            </div>
+        </section>
+    <!--Beginning of the Welcome-section-->
+        <section id="project">
+            <div class="project-tile">      
+                <h1>These are Our products</h1>  <hr>   
+            </div>                         
+            <div class="projects">
+            <div class="work">
+                <a href="#">
+                   <img src="https://cdn.pixabay.com/photo/2022/12/04/00/01/owl-7633528_640.png" alt="">
+                   <h2>Digital Painting</h2>   
+                </a>
+            </div>
+                <div class="work">
+                    <a href="#" >
+                       <img src="https://sm.ign.com/ign_in/screenshot/default/pubg-battlegrounds-d4of8_zak6.jpg" alt="">
+                       <h2>Online Games</h2>
+                    </a>
+                </div>
+                <div class="work">
+                    <a href="#" >
+                        <img src="https://static.boredpanda.com/blog/wp-content/uploads/2016/06/download-free-studio-ghibli-wallpapers-miyazaki-anime-12-576114b8463c0__880.jpg" alt="">
+                        <h2>2d Animation</h2>
+                    </a>
+                </div>
+                <div class="work">
+                    <a href="Entertainment.html" >
+                        <img src="https://i0.wp.com/thsindex.org/wp-content/uploads/2023/04/Money-Heist-was-first-released-on-Antena-3-in-Spain-in-2017-Netflix.jpg?fit=1920%2C2560&ssl=1" alt="">
+                        <h2>Video Streaming</h2>
+                    </a>
+                </div>
+                <div class="work">
+                    <a href="#" >
+                        <img src="https://img.freepik.com/premium-photo/incredible-hulk-wallpapers-hd-wallpapers_853177-21137.jpg" alt="">
+                        <h2>3D Modeling</h2>
+                    </a>
+                </div>
+                <div class="work">
+                    <a href="#" >
+                        <img src="https://www.analyticsinsight.net/wp-content/uploads/2021/11/Virtual-reality.jpg" alt="">
+                        <h2>Virtual Reality</h2>
+                    </a>
+                </div>
+                <div class="button-1">
+                    <a href="#" >
+                        <button>Show all<span> > </span></button>
+                    </a>
+                </div>
+            </div>
+        </section>
+    <!--Beginning of the Welcome-section-->
+        <section id="contact">
+            <div class="connect">
+                <h1>Let's work together...</h1>
+                <p>How do you take your coffee?</p>
+                <div class="social-icons">
+                    <a href="#">
+                      <i class="fab fa-facebook-f">Facebook</i>
+                    </a>
+                    <a href="#">
+                      <i class="fab fa-twitter">Twitter</i>
+                    </a>
+                    <a href="#">
+                      <i class="fab fa-github">GitHub</i>
+                    </a>
+                    <a href="#">
+                      <i class="fab fa-linkedin-in">Linkedin</i>
+                    </a>
+                    <a href="#">
+                      <i class="fab fa-youtube">Youtube</i>
+                    </a>
+                  </div>
+                  
+                  <div class="footer">
+                <hr>
+                <div class="f">
+                  <h3>**This is just a fake portfolio. All the product and contact details given are not real.</h3>
+                  <h3>© Created for Arc </h3>
+                </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+</body>
+</html>
